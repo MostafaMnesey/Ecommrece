@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Nav from "./Components/Navbar/Nav";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./assets/Layout/Layout";
 import Home from "./Components/Home/Home";
 import Register from "./Components/Register/Register";
