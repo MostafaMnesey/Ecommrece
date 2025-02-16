@@ -1,6 +1,6 @@
 import React from "react";
 import py1 from "../../assets/images/paypal.png";
-import py2 from "../../assets/Images/mastercard.webp";
+import py2 from "../../assets/images/";
 import py3 from "../../assets/Images/amazon-payments-logo1.png";
 import py4 from "../../assets/Images/American-Express-Color.png";
 import py5 from "../../assets/Images/get-apple-store.png";
