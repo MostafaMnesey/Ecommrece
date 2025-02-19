@@ -83,12 +83,15 @@ export default function Cart() {
     setLoadingVisa(true);
     try {
       const res = await axios.post(
-        `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${window.location.origin}`,
+        `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}`,
         values,
         {
           headers: {
             token: localStorage.getItem("token"),
           },
+          params:{
+            url:`${window.location.origin}`
+          }
         }
       );
 

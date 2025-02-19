@@ -1,10 +1,10 @@
 import React from "react";
-/* import py1 from "../../assets/images/paypal.png";
+import py1 from "../../assets/images/paypal.png";
 import py2 from "../../assets/images/mastercard.webp";
 import py3 from "../../assets/images/amazon-payments-logo1.png";
 import py4 from "../../assets/images/amirican.png";
 import py5 from "../../assets/images/getApp.png"
-import py6 from "../../assets/images/getGoogle.png"; */
+import py6 from "../../assets/images/getGoogle.png";
 
 export default function Footer() {
   return (
@@ -40,7 +40,7 @@ export default function Footer() {
                 />
                 <button
                   type="button"
-                  className="font-open-sans flex items-center justify-center text-white pb-4 bg-main h-110 w-1/4 ms-4 mt-3 py-3 hover:text-main hover:bg-white border text-nowrap border-main hover:bg-main  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
+                  className="font-open-sans flex items-center w-2/4 justify-center text-wrap text-white pb-4 bg-main h-110 lg:w-1/4 ms-4 mt-3 py-3 hover:text-main hover:bg-white border border-main hover:bg-main  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
                 >
                  Share App Link
                 </button>
@@ -48,9 +48,9 @@ export default function Footer() {
               <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
 
               <div className="payment grid grid-cols-1 md:grid-cols-2 gap-5 pb-5">
-               <div className="flex items-center">
+               <div className="flex flex-wrap  items-center">
                <p className="pe-5 font-open-sans text-lg">Payment Partners</p>
-                <div className="flex">
+                <div className="flex my-2 ">
 <img src={py1}className="w-[60px] px-2 h-[60px] rounded-full" alt="" />
 <img src={py2}className="w-[60px] px-2 h-[60px] rounded-full" alt="" />
 <img src={py3}className="w-[60px] px-2 h-[60px] rounded-full" alt="" />

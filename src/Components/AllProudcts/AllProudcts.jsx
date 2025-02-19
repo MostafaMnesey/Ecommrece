@@ -48,7 +48,7 @@ export default function AllProudcts() {
             <h1 className="text-3xl flex justify-center font-bold text-center py-4 text-main ">
               <span className="text-main text-[60px]">A</span>ll Products
             </h1>
-            <div className="grid  md:ms-0  grid-cols-1 ms-16 sm:ms-32   md:grid-cols-2 lg:grid-cols-4 md:gap-3">
+            <div className="grid gap-2 me-14  md:ms-0  grid-cols-1 ms-16 sm:ms-32   md:grid-cols-2 lg:grid-cols-4 md:gap-3">
               {AllProducts.map((item) => (
                 <div
                   key={item.id}
