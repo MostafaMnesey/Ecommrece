@@ -7,6 +7,6 @@ export default function Layout() {
   return <>
     <Nav/>
      <Outlet/>
-<Footer></Footer>
+{/* <Footer></Footer> */}
   </>
 }
