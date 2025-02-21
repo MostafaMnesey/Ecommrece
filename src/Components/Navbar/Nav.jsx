@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import Logo from "../../assets/images/freshcart-logo.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthContext";
 import { motion } from "framer-motion";
 import { WishlistContext } from "../../Context/WishlistContext";
@@ -90,44 +90,44 @@ export default function Nav() {
             {token ? (
               <ul className="flex flex-col  font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li className="transition-all  group/li	  py-2 px-2 rounded-lg hover:text-black hover:bg-main hover:border-main">
-                  <Link
+                  <NavLink
                     to="/"
                     className="block py-2 px-3 md:p-0 text-main  group-hover/li:text-white   md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="transition-all group/li	  py-2 px-2 rounded-lg hover:text-black hover:bg-main hover:border-black">
-                  <Link
+                  <NavLink
                     to="/Catigories"
                     className="block py-2 px-3 md:p-0 text-main  group-hover/li:text-white   md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Catigories
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="transition-all group/li	  py-2 px-2 rounded-lg hover:text-black hover:bg-main hover:border-black">
-                  <Link
+                  <NavLink
                     to="/subcategories"
                     className="block py-2 px-3 md:p-0 text-main  group-hover/li:text-white   md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Sub Categories
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="transition-all	 group/li  py-2 px-2 rounded-lg hover:text-black  hover:bg-main hover:border-main">
-                  <Link
+                  <NavLink
                     to="/brands"
                     className="block py-2 px-3 md:p-0 text-main  group-hover/li:text-white   md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Brands
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="transition-all	 group/li  py-2 px-2 rounded-lg hover:bg-main hover:border-main">
-                  <Link
+                  <NavLink
                     to="products"
                     className="block py-2 px-3 md:p-0 text-main  group-hover/li:text-white   md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Products
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="transition-all	 group/li  py-2 px-2 rounded-lg hover:text-black ">
                   <Link to="/wishlist" className="relative  items-center ">

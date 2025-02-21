@@ -90,7 +90,7 @@ export default function Cart() {
             token: localStorage.getItem("token"),
           },
           params:{
-            url:`${window.location.origin}`
+            url:'https://ecommrece-git-main-mostafamneseys-projects.vercel.app/#'
           }
         }
       );
